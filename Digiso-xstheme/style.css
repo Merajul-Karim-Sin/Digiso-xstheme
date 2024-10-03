@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Sora:wght@100..800&display=swap');
+
+/* font-family: "Bricolage Grotesque", sans-serif; 
+font-family: "Sora", sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html ,body{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: tomato; */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    width: 68vw;
+    margin: 0 auto;
+}
+
+#navbar{
+    border-bottom: 1px solid #e8e8e8;
+    background: #ffffff;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+
+.nav-menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu ul li a{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+.nav-menu ul li a img{
+    width: 16px;
+    margin-left: 2px;
+    margin-top: 3px;
+}
+
+.nav-menu ul li a span{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #171717;
+    position: relative;
+}
+
+
+/* .nav-menu ul li a span{
+
+} */
+
+.nav-menu ul li{
+    position: relative;
+}
+
+
+.nav-menu ul li ul{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 38px; */
+}
+
+
+.nav-menu ul li ul li a{
+    padding: 10px;
+    margin: 5px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #171717;
+}
+
+.nav-menu ul li ul li a:hover{
+    background: #d6ffc8;
+}
+
+
+.nav-menu ul li ul{
+    border: 1px solid #e8e8e8;
+
+}
+
+.drop-down{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    /* background: #ffffff; */
+    padding-top: 38px;
+    display: none;
+    transition: all 2s;
+}
+
+
+/* .drop-down::before{
+    content: "";
+    position: absolute;
+}
+.nav-menu ul li:hover::after{
+    transition: all .5s;
+    padding-top: 45px;
+} */
+
+
+.nav-menu ul li:hover .drop-down{
+    display: block;
+}
+
+.nav-menu ul li span::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #10171d;
+    transition: all .5s;
+}
+
+.nav-menu ul li span:hover::before{
+    width: 100%;
+}
+
+
+
+
+.join-with a{
+    font-family: "Sora", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #182153;
+    border-bottom: 1px solid #10171d;
+    transition: all .5s linear;
+}
+
+.join-with a:hover{
+    border-bottom: 0px;
+}
+
+.list-hide{
+    display: none;
+}
+
+
+.list-icon img{
+    width: 32px;
+    border: 2px solid black;
+    padding: 3px;
+    border-radius: 5px;
+}
+
